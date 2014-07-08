@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ page.title }}</title>
-</head>
-<body>
+{% include head.html %}
+
     <h1>
-        <a href="{{ site.baseurl }}/">My First Jekyll-Powered Blog</a>
+        <a href="{{ site.baseurl }}/">My First Jekyll-Powered Blog / {{ page.title }}</a>
     </h1>  
 
     {{ content }}
@@ -17,5 +13,4 @@
         {% endfor %}
     </ul>
 
-</body>
-</html>
+{% include foot.html %}
