@@ -3,7 +3,6 @@ markdown: kramdown
 pygments: true
 permalink: pretty
 
-
 # Setup
 title:            title
 tagline:          tagline
