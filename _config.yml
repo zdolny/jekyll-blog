@@ -1,2 +1,10 @@
-baseurl: /blog
+baseurl: /blog/
 markdown: kramdown
+pygments: true
+permalink: pretty
+
+
+# Setup
+title:            title
+tagline:          tagline
+paginate:         1

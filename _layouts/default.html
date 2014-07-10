@@ -1,16 +1,34 @@
+
 {% include head.html %}
 
-    <h1>
-        <a href="{{ site.baseurl }}/">My First Jekyll-Powered Blog / {{ page.title }}</a>
-    </h1>  
+<body>
 
-    {{ content }}
+    <div class="container content">
+        <div class="masthead">
+            <h3 class="masthead-title">
+                <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+                <small>{{ site.tagline }}</small>
+            </h3>
+        </div>
 
-    <h2>Recent Posts</h2>
-    <ul>
-        {% for post in site.posts do %}  
-        <li> {{ post.date }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
+        {{ content }}
+
+        <h2>Recent Posts</h2>
+        <ul>
+            {% for post in site.posts do %}  
+            <li> {{ post.date }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <div class="footer">
+            <p>
+                &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+            </p>
+        </div>
+    </div>
+
+{% include nav.html %}
+
+</body>
 
 {% include foot.html %}
