@@ -1,7 +1,9 @@
+url: http://www.michaldolny.com/blog
 baseurl: /blog
 markdown: kramdown
 pygments: true
-permalink: pretty
+permalink: /:year/:month/:title/
+paginate_path: /page:num/
 
 # Setup
 title:            title
