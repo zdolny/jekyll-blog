@@ -2,14 +2,14 @@
     <ul>Pages:
         {% for p in site.pages %}
         <li>
-            <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
+            <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
         </li>
         {% endfor %}
     </ul>
     <ul>Posts:
         {% for p in site.posts %}
         <li>
-            {{ p.date }} <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
+            {{ p.date }} <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
         </li>
         {% endfor %}
     </ul>
