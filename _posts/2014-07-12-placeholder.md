@@ -9,6 +9,8 @@ author-link: http://www.michaldolny.com
 
 Ut a sem ac elit lacinia pretium in in nisl. Donec ac est ligula. Etiam ac tincidunt ligula. Nam porttitor purus enim, auctor tempus ipsum rutrum et.
 
+<!-- more -->
+
 {% highlight css %}
 .stuff {
     color: #ccc;

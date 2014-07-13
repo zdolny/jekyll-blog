@@ -12,3 +12,5 @@ author-link: http://www.michaldolny.com
     color: #ccc;
 }
 {% endhighlight %}
+
+<!-- more -->
