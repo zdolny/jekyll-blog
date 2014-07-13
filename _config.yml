@@ -1,5 +1,5 @@
 url: http://www.michaldolny.com/blog
-baseurl: /blog
+# baseurl: /blog
 markdown: kramdown
 pygments: true
 permalink: /:year/:month/:title/
