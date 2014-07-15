@@ -13,21 +13,12 @@
 
         {{ content }}
 
-        <h2>Recent Posts</h2>
-        <ul>
-            {% for post in site.posts do %}  
-            <li> {{ post.date | date: "%d-%m-%Y" }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-
         <div class="footer">
             <p>
                 &copy; {{ site.time | date: '%Y' }}. All rights reserved.
             </p>
-        </div>
+        </div>        
     </div>
-
-{% include nav.html %}
 
 </body>
 

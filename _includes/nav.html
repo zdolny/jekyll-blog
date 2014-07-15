@@ -1,4 +1,11 @@
 <nav class="nav-primary" role="navigation" >
+    <h2>Recent Posts</h2>
+    <ul>
+        {% for post in site.posts do %}  
+        <li> {{ post.date | date: "%d-%m-%Y" }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+
     <ul>Pages:
         {% for p in site.pages %}
         <li>
