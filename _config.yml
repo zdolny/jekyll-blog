@@ -10,3 +10,5 @@ excerpt_separator: "<!-- more -->"
 title: title
 tagline: tagline
 paginate: 2
+
+include: ['_pages']
