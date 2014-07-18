@@ -1,23 +1,6 @@
-<nav class="nav-primary" role="navigation" >
-    <h2>Recent Posts</h2>
-    <ul>
-        {% for post in site.posts do %}  
-        <li> {{ post.date | date: "%d-%m-%Y" }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
-
-    <ul>Pages:
-        {% for p in site.pages %}
-        <li>
-            <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-    <ul>Posts:
-        {% for p in site.posts %}
-        <li>
-            {{ p.date | date: "%d-%m-%Y" }} <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</nav>
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+<nav class="nav-primary" role="navigation">
+    <li><a {% if location == 'about' %}class="active" {% endif %}href="{{ site.baseurl }}/about/">About</a></li>
+    <li><a {% if location == 'archive' %}class="active" {% endif %}href="{{ site.baseurl }}/archive/">Archive</a></li>
+    <li><a {% if location == 'atom' %}class="active" {% endif %}href="{{ site.baseurl }}/atom/">RSS</a></li>
+</ul></nav>
