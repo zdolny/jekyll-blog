@@ -12,3 +12,4 @@ tagline: tagline
 paginate: 2
 
 include: ['_pages']
+relative_permalinks: false
