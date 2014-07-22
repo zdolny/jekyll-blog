@@ -1,0 +1,41 @@
+---
+permalink: archive/
+layout: page
+title: Archive
+---
+
+<ul>
+{% for post in site.posts %}
+    {% unless post.next %}
+        <h2>{{ post.date | date: '%Y' }}</h2>
+    {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+            <h2>{{ post.date | date: '%Y' }}</h2>
+        {% endif %}
+    {% endunless %}
+
+    <li>
+        <p>
+            {% assign m = post.date | date: "%-m" %}
+            {{ post.date | date: "%-d" }}
+            {% case m %}
+                {% when '1' %}Sty
+                {% when '2' %}Lut
+                {% when '3' %}Mar
+                {% when '4' %}Kwi
+                {% when '5' %}Maj
+                {% when '6' %}Cze
+                {% when '7' %}Lip
+                {% when '8' %}Sie
+                {% when '9' %}Wrz
+                {% when '10' %}Paź
+                {% when '11' %}Lis
+                {% when '12' %}Gru
+            {% endcase %}{{ post.date | date: "%Y" }} 
+            &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </p>
+    </li>
+{% endfor %}
+</ul>
