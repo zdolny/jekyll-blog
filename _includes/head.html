@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>
-        {% if page.title == "Home" %}
-            {{ site.title }} &middot; {{ site.tagline }}
-        {% else %}
-            {{ page.title }} &middot; {{ site.title }}
-        {% endif %}
-    </title>
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% if page.title == "Home" %}
+        <title>{{ site.title }} &middot; {{ site.tagline }}</title>
+        <link rel="canonical" href="{{ site.url }}">
+    {% else %}
+        <title>{{ page.title }} &middot; {{ site.title }}</title>
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% endif %}
 
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
