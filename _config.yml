@@ -1,4 +1,7 @@
-url: http://www.michaldolny.com/blog
+name:   'Michal Dolny Blog'
+url: 'http://www.michaldolny.com/blog'
+author: 'Michal Dolny'
+
 baseurl: /blog
 markdown: kramdown
 pygments: true
