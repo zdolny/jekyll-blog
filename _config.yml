@@ -1,6 +1,6 @@
-name:   'Michal Dolny Blog'
 url: 'http://www.michaldolny.com/blog'
-author: 'Michal Dolny'
+author:
+  name: 'Michał Dolny'
 
 baseurl: /blog
 markdown: kramdown
@@ -10,7 +10,7 @@ paginate_path: /page:num/
 excerpt_separator: "<!-- more -->"
 
 # Setup
-title: title
+title: 'Michał Dolny /blog'
 tagline: tagline
 paginate: 2
 
