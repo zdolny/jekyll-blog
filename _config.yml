@@ -1,6 +1,7 @@
 url: 'http://www.michaldolny.com/blog'
 author:
   name: 'Michał Dolny'
+title: test
 
 baseurl: /blog
 markdown: kramdown
