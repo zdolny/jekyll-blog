@@ -6,7 +6,7 @@ sitemap:
 ---
 
 <div class="posts">
-    {% for post in paginator.posts %}
+    {% for post in paginator.posts %}{% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
         <div class="post">
             <h1 class="post-title">
                 <a href="{{ site.baseurl }}{{ post.url }}">
@@ -32,7 +32,11 @@ sitemap:
                 {% endcase %}
                 {{ post.date | date: "%Y" }}
             </p>
+
             <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">View Comments</a>
+            
+            {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read
+
             <p class="post-excerpt">{{ post.excerpt | strip_html }} (<a href="{{ site.baseurl }}{{ post.url }}">Read More</a>)</p>
         </div>
     {% endfor %}
