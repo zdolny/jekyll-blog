@@ -33,9 +33,9 @@ sitemap:
                 {{ post.date | date: "%Y" }}
             </p>
 
-            <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">View Comments</a>
+            <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
             
-            {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read
+            {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
 
             <p class="post-excerpt">{{ post.excerpt | strip_html }} (<a href="{{ site.baseurl }}{{ post.url }}">Read More</a>)</p>
         </div>
