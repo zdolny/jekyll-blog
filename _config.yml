@@ -16,3 +16,5 @@ paginate: 2
 
 include: ['_pages']
 relative_permalinks: false
+
+safe: true
