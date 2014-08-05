@@ -7,7 +7,12 @@ sitemap:
 
 <div class="posts">
     {% for post in paginator.posts %}
-    {% capture readtime %}{{ post.content | number_of_words | plus:90 | divided_by:2 }}{% endcapture %}
+    {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
+
+    {% capture words %}
+        {{ post.content | strip_html | number_of_words | minus: 250 }}
+    {% endcapture %}
+
         <div class="post">
             <h1 class="post-title">
                 <a href="{{ site.baseurl }}{{ post.url }}">
@@ -35,6 +40,12 @@ sitemap:
             </p>
 
             <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
+            
+            {% unless words contains "-" %}
+                &bull;
+                {{ words | plus: 341 | divided_by: 180 | append: ' minute read' }}
+            {% endunless %}
+
             {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
 
             <p class="post-excerpt">{{ post.excerpt | strip_html }} (<a href="{{ site.baseurl }}{{ post.url }}">Read More</a>)</p>
