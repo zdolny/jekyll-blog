@@ -3,7 +3,7 @@ author:
   name: 'Michał Dolny'
 
 baseurl: /blog
-markdown: kramdown
+markdown: 'kramdown'
 pygments: true
 permalink: /:year/:month/:title/
 paginate_path: /page:num/
