@@ -3,6 +3,7 @@ layout: post
 title: Placeholder
 author: me
 author-link: http://www.michaldolny.com
+category: HTML
 ---
 
 # Hello World New

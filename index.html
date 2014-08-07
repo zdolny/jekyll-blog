@@ -7,17 +7,17 @@ sitemap:
 
 <div class="posts">
     {% for post in paginator.posts %}
-    {% capture words %}
-        {{ post.content | strip_html | number_of_words }}
-    {% endcapture %}
-    {% capture remainder %}
-        {{ words | modulo:180 }}
-    {% endcapture %}
-    {% if remainder | to_number >= 90 %}
-        {% assign readtime = words | minus:remainder | divided_by:180 %}
-    {% else %}
-        {% assign readtime = words | minus:remainder | divided_by:180 | minus:1 %}
-    {% endif %}
+        {% capture words %}
+            {{ post.content | strip_html | number_of_words }}
+        {% endcapture %}
+        {% capture remainder %}
+            {{ words | modulo:180 }}
+        {% endcapture %}
+        {% if remainder | to_number >= 90 %}
+            {% assign readtime = words | minus:remainder | divided_by:180 %}
+        {% else %}
+            {% assign readtime = words | minus:remainder | divided_by:180 | minus:1 %}
+        {% endif %}
 
         <div class="post">
             <h1 class="post-title">
@@ -44,6 +44,8 @@ sitemap:
                 {% endcase %}
                 {{ post.date | date: "%Y" }}
             </p>
+
+            <p>category: {{ post.category }}</p>
 
             <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
 
