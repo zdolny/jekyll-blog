@@ -38,6 +38,20 @@ layout: default
     <a href="https://twitter.com/share" class="twitter-share-button" data-via="michaldolny">Tweet</a>
 </div>
 
+<div class="neighboring-posts">
+    {% if page.previous %}
+        <small>
+            <a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.summary }}">&larr; {{ page.previous.title }}</a>
+        </small>
+    {% endif %}
+
+    {% if page.next %}
+        <small>
+            <a href="{{ site.baseurl }}{{ page.next.url }}" {% if page.next.summary %}title="{{ page.next.summary }}"{% endif %}>{{ page.next.title }} &rarr;</a>
+        </small>
+    {% endif %}
+</div>
+
 <div class="related">
     <h2>Related Posts</h2>
     <ul class="related-posts">
