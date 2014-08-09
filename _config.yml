@@ -10,7 +10,7 @@ paginate_path: /page:num/
 excerpt_separator: "<!-- more -->"
 
 # Setup
-title: 'Michał Dolny /blog'
+title: 'zdolny blog'
 tagline: tagline
 paginate: 2
 
