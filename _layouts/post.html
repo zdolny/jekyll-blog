@@ -2,7 +2,19 @@
 layout: default
 ---
 
-{% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
+{% comment %} {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %} {% endcomment %}
+
+{% capture words %}
+    {{ page.content | strip_html | number_of_words }}
+{% endcapture %}
+{% capture remainder %}
+    {{ words | modulo:180 }}
+{% endcapture %}
+{% if remainder | to_number >= 90 %}
+    {% assign readtime = words | minus:remainder | divided_by:180 %}
+{% else %}
+    {% assign readtime = words | minus:remainder | divided_by:180 | minus:1 %}
+{% endif %}
 
 <div class="post">
     <h1 class="post-title">{{ page.title }}</h1>
@@ -28,7 +40,7 @@ layout: default
 
     <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">komentarze</a>
 
-    {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
+    {% if readtime <= 0 %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
     
     {{ content }}
 
