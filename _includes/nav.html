@@ -8,6 +8,7 @@
 </nav>
 
 <aside>
+    <h2>Kategorie</h2>
     {% for tag in site.categories %}
         {{ tag[0] }} {{ tag | last | size }}
     {% endfor %}
@@ -25,7 +26,8 @@
           {% endif %}
         {% assign tags_list = nil %}
     </ul>
-
+    
+    <h2>Posty w kategoriach</h2>
     {% for tag in site.categories %} 
       <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
       <ul class="post-list">
