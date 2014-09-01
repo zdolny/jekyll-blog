@@ -45,13 +45,13 @@ sitemap:
                 {{ post.date | date: "%Y" }}
             </p>
 
-            <p>category: {{ post.category }}</p>
+            <p>kategoria: {{ post.category }}</p>
 
             <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
 
             {% if readtime <= 0 %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
 
-            <p class="post-excerpt">{{ post.excerpt | strip_html }} (<a href="{{ site.baseurl }}{{ post.url }}">Read More</a>)</p>
+            <p class="post-excerpt">{{ post.excerpt | strip_html }} [&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">Czytaj dalej</a>&nbsp;]</p>
         </div>
     {% endfor %}
 </div>
@@ -59,17 +59,17 @@ sitemap:
 
 <div class="pagination">
     {% if paginator.next_page %}
-        <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
+        <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Starsze</a>
     {% else %}
-        <span class="pagination-item older">Older</span>
+        <span class="pagination-item older">Starsze</span>
     {% endif %}
     {% if paginator.previous_page %}
         {% if paginator.page == 2 %}
-            <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+            <a class="pagination-item newer" href="{{ site.baseurl }}/">Nowsze</a>
         {% else %}
-            <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+            <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Nowsze</a>
         {% endif %}
     {% else %}
-        <span class="pagination-item newer">Newer</span>
+        <span class="pagination-item newer">Nowsze</span>
     {% endif %}
 </div>
