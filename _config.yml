@@ -2,12 +2,12 @@ url: 'http://www.michaldolny.com/blog'
 author:
   name: 'Michał Dolny'
 
-baseurl: /blog
+baseurl: ''
 markdown: 'kramdown'
 highlighter: pygments
 permalink: /:year/:month/:title/
 paginate_path: /page:num/
-excerpt_separator: "<!-- more -->"
+excerpt_separator: '<!-- more -->'
 
 # Setup
 title: 'zdolny blog'
