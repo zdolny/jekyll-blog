@@ -42,6 +42,16 @@ layout: default
 
     {% if readtime <= 0 %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
     
+    {% if page.img %}
+        <div class="post-img" style="background-img: url(/assets/img/post-img/{{ page.img }});">
+            <img src="/assets/img/post-img/{{ page.img }}" alt="{{ page.title }}" />
+        </div>
+    {% else %}
+        {% comment %}<div class="post-img no-img">
+            <img src="/assets/img/post-img/no-img.png" alt="{{ page.title }}" />
+        </div>{% endcomment %}
+    {% endif %}
+
     {{ content }}
 
     <p>Post by <a href="{{ page.author-link }}">{{ page.author }}</a>.</p>

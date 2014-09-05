@@ -51,6 +51,16 @@ sitemap:
 
             {% if readtime <= 0 %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
 
+            {% if post.img %}
+                <a href="{{ post.url }}" class="post-img" style="background-img: url(/assets/img/post-img/{{ post.img }});">
+                    <img src="/assets/img/post-img/{{ post.img }}" alt="{{ post.title }}" />
+                </a>
+            {% else %}
+                <a href="{{ post.url }}" class="post-img no-img">
+                    <img src="/assets/img/post-img/no-img.gif" alt="{{ post.title }}" />
+                </a>
+            {% endif %}
+
             <p class="post-excerpt">{{ post.excerpt | strip_html }} [&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">Czytaj dalej</a>&nbsp;]</p>
         </div>
     {% endfor %}
