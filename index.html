@@ -56,9 +56,9 @@ sitemap:
                     <img src="/assets/img/post-img/{{ post.img }}" alt="{{ post.title }}" />
                 </a>
             {% else %}
-                <a href="{{ post.url }}" class="post-img no-img">
+                {% comment %}<a href="{{ post.url }}" class="post-img no-img">
                     <img src="/assets/img/post-img/no-img.gif" alt="{{ post.title }}" />
-                </a>
+                </a>{% endcomment %}
             {% endif %}
 
             <p class="post-excerpt">{{ post.excerpt | strip_html }} [&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">Czytaj dalej</a>&nbsp;]</p>
