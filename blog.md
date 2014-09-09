@@ -1,5 +1,5 @@
 ---
-permalink: blog/
+permalink: /blog/
 redirect: /
 layout: redirect
 sitemap:
