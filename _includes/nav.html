@@ -1,9 +1,9 @@
 {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
 <nav class="nav-primary" role="navigation">
     <ul>
-        <li><a {% if location == 'about' %}class="active" {% endif %}href="{{ site.baseurl }}/about/">About</a></li>
-        <li><a {% if location == 'archive' %}class="active" {% endif %}href="{{ site.baseurl }}/archive/">Archive</a></li>
-        <li><a {% if location == 'atom' %}class="active" {% endif %}href="{{ site.baseurl }}/feed.atom">Feed</a></li>
+        <li><a {% if location == 'about' %}class="active" {% endif %}href="{{ site.baseurl }}/about/">O mnie</a></li>
+        <li><a {% if location == 'archive' %}class="active" {% endif %}href="{{ site.baseurl }}/archive/">Archiwum</a></li>
+        <li><a {% if location == 'atom' %}class="active" {% endif %}href="{{ site.baseurl }}/feed.atom">Subskrypcja</a></li>
     </ul>
 </nav>
 

@@ -19,4 +19,10 @@
     <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml">
+
+    <script>
+        if (window.location.href.indexOf('http://www.michaldolny.com/blog') === 0) {
+            window.location.href = 'http://blog.michaldolny.com{{ page.url }}';
+        }
+    </script>
 </head>
