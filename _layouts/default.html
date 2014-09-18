@@ -55,6 +55,12 @@
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
     </script>
+
+    <script>
+        if (window.location.href.indexOf('http://www.michaldolny.com/blog') === 0) {
+            window.location.href = 'http://blog.michaldolny.com{{ page.url }}';
+        }
+    </script>
     
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
