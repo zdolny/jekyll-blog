@@ -1,7 +1,7 @@
 ---
 permalink: about/
 layout: page
-title: About
+title: O mnie
 ---
 
 <p class="message">
