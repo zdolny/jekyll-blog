@@ -10,6 +10,9 @@
         <title>{{ page.title }} &middot; {{ site.title }}</title>
         <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     {% endif %}
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="description" content="{{ page.description }}">
+
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }} — Feed" href="{{ site.url }}/feed.atom">
 
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
