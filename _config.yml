@@ -15,6 +15,7 @@ tagline: tagline
 paginate: 2
 
 include: ['_pages']
+include: ['_rdr']
 relative_permalinks: false
 
 safe: true
