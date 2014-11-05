@@ -10,21 +10,38 @@ module.exports = function(grunt) {
                 command: 'jekyll serve'
             }
         },
-        sass: {
+        // sass: {
+        //     dist: {
+        //         options: {
+        //             style: 'expanded'
+        //         },
+        //         files: {
+        //             'assets/css/main.css': 'assets/scss/main.scss'
+        //         }
+        //     },
+        //     prod: {
+        //         options: {
+        //             style: 'compressed'
+        //         },
+        //         files: {
+        //             'assets/css/main.css': 'assets/scss/main.scss'
+        //         }
+        //     }
+        // },
+        compass: {
             dist: {
                 options: {
-                    style: 'expanded'
-                },
-                files: {
-                    'assets/css/main.css': 'assets/scss/main.scss'
+                    config: 'config.rb',
+                    environment: 'production',
+                    outputStyle: 'compressed',
+                    sourcemap: true
                 }
             },
-            prod: {
+            dev: {
                 options: {
-                    style: 'compressed'
-                },
-                files: {
-                    'assets/css/main.css': 'assets/scss/main.scss'
+                    config: 'config.rb',
+                    environment: 'development',
+                    outputStyle: 'expanded'
                 }
             }
         },
@@ -52,7 +69,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['assets/scss/*.scss'],
-                tasks: ['sass:dist', 'shell:jekyllBuild'],
+                tasks: ['compass:dev', 'shell:jekyllBuild'],
                 options: {
                     spawn: false
                 }
@@ -62,6 +79,6 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['sass:dist', 'watch']);
+    grunt.registerTask('default', ['compass:dev', 'watch']);
 
 };
