@@ -10,28 +10,58 @@ module.exports = function(grunt) {
                 command: 'jekyll serve'
             }
         },
+        sass: {
+            dist: {
+                options: {
+                    style: 'expanded'
+                },
+                files: {
+                    'assets/css/main.css': 'assets/scss/main.scss'
+                }
+            },
+            prod: {
+                options: {
+                    style: 'compressed'
+                },
+                files: {
+                    'assets/css/main.css': 'assets/scss/main.scss'
+                }
+            }
+        },
         watch: {
             options: {
                 livereload: true,
-            },
-            files: [
-                '_includes/*',
-                '_layouts/*',
-                '_pages/*',
-                '_posts/*',
-                '_config.yml',
-                'index.html'
-            ],
-            tasks: ['shell:jekyllBuild', 'shell:jekyllServe'],
-            options: {
                 interrupt: true,
                 atBegin: true
+            },
+            jekyll: {
+                files: [
+                    '_includes/*',
+                    '_layouts/*',
+                    '_pages/*',
+                    '_posts/*',
+                    '_config.yml',
+                    'index.html'
+                ],
+                tasks: [
+                    'shell:jekyllBuild'
+                ],
+                options: {
+                    spawn: false
+                }                   
+            },
+            css: {
+                files: ['assets/scss/*.scss'],
+                tasks: ['sass:dist', 'shell:jekyllBuild'],
+                options: {
+                    spawn: false
+                }
             }
         }
     });
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['shell']);
+    grunt.registerTask('default', ['sass:dist', 'watch']);
 
 };
