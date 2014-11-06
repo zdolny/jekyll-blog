@@ -1,6 +1,6 @@
 {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
 <ul class="nav navbar-nav navbar-right">
-    <li><a {% if location == 'about' %}class="active" {% endif %}href="{{ site.baseurl }}/about/">O mnie</a></li>
-    <li><a {% if location == 'archive' %}class="active" {% endif %}href="{{ site.baseurl }}/archive/">Archiwum</a></li>
-    <li><a {% if location == 'atom' %}class="active" {% endif %}href="{{ site.baseurl }}/feed.atom">Subskrypcja</a></li>
+    <li{% if location == 'about' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about/">O mnie</a></li>
+    <li{% if location == 'archive' %} class="active"{% endif %}><a href="{{ site.baseurl }}/archive/">Archiwum</a></li>
+    <li{% if location == 'atom' %} class="active"{% endif %}><a href="{{ site.baseurl }}/feed.atom">Subskrypcja</a></li>
 </ul>
