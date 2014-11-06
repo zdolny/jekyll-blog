@@ -17,13 +17,49 @@
 </script>
 
     <div class="container content">
-        <div class="masthead">
-            <h3 class="masthead-title">
-                <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-                <small>{{ site.tagline }}</small>
-            </h3>
-            {% include nav.html %}
-        </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h3 class="navbar-brand">
+                        <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+                        <small>{{ site.tagline }}</small>
+                    </h3>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    {% include nav.html %}
+                </div>
+            </div>
+        </nav>
+
+        <aside>
+            <h2>Kategorie</h2>
+            {% comment %}
+            {% for tag in site.categories %}
+                {{ tag[0] }} ({{ tag | last | size }})
+            {% endfor %}
+            {% endcomment %}
+
+            <ul class="tag-box inline">
+                {% assign tags_list = site.categories %}  
+                    {% if tags_list.first[0] == null %}
+                        {% for tag in tags_list %} 
+                            <li><a href="{{ site.baseurl }}/categories/#{{ tag }}">{{ tag | capitalize }} <span>({{ site.tags[tag].size }})</span></a></li>
+                        {% endfor %}
+                    {% else %}
+                        {% for tag in tags_list %} 
+                            <li><a href="{{ site.baseurl }}/categories/#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>({{ tag[1].size }})</span></a></li>
+                        {% endfor %}
+                    {% endif %}
+                {% assign tags_list = nil %}
+            </ul>
+        </aside>
 
         {{ content }}
 
@@ -33,6 +69,10 @@
             </p>
         </div>        
     </div>
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
 
     <script type="text/javascript">
         var disqus_shortname  = 'zdolny',
