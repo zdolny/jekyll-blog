@@ -45,6 +45,16 @@ module.exports = function(grunt) {
                 }
             }
         },
+        uglify: {
+            my_target: {
+                files: {
+                    'assets/js/main.min.js': [
+                        'bower_components/jquery/dist/jquery.js', 
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js']
+                }
+            }
+        },
         watch: {
             options: {
                 livereload: true,
