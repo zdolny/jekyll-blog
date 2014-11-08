@@ -966,13 +966,13 @@ address {
 @media (min-width: 992px) {
   /* line 10, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 970px;
+    width: 750px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 1170px;
+    width: 750px;
   }
 }
 
@@ -4307,5 +4307,19 @@ tbody.collapse.in {
   /* line 18, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important;
+  }
+}
+/* line 6, ../scss/main.scss */
+.navbar {
+  border-radius: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+@media (min-width: 1200px) {
+  /* line 13, ../scss/main.scss */
+  .container {
+    width: 750px;
   }
 }
