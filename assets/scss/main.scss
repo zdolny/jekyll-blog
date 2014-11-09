@@ -2,6 +2,9 @@
 @import "compass";
 @import "bootstrap";
 
+body { 
+    padding-top: 60px; /* navbar 50px */ 
+}
 
 .navbar {
     border-radius: 0;

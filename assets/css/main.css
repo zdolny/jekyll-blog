@@ -4309,7 +4309,13 @@ tbody.collapse.in {
     display: none !important;
   }
 }
-/* line 6, ../scss/main.scss */
+/* line 5, ../scss/main.scss */
+body {
+  padding-top: 60px;
+  /* navbar 50px */
+}
+
+/* line 9, ../scss/main.scss */
 .navbar {
   border-radius: 0;
   border-top: 0;
@@ -4317,7 +4323,7 @@ tbody.collapse.in {
   border-left: 0;
 }
 
-/* line 13, ../scss/main.scss */
+/* line 16, ../scss/main.scss */
 main .post {
   overflow: hidden;
 }
