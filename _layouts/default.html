@@ -38,7 +38,13 @@
     </nav>
 
     <div class="container content">
-        <aside>
+        <div class="row">
+        
+        <main class="col-sm-9">
+            {{ content }}
+        </main>
+
+        <aside class="col-sm-3">
             <h2>Kategorie</h2>
             {% comment %}
             {% for tag in site.categories %}
@@ -61,7 +67,7 @@
             </ul>
         </aside>
 
-        {{ content }}
+        </div>
 
         <div class="footer">
             <p>

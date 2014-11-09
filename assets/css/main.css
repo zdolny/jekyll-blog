@@ -391,8 +391,8 @@ html {
 /* line 27, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857;
+  font-size: 16px;
+  line-height: 1.4;
   color: #333333;
   background-color: #fff;
 }
@@ -449,7 +449,7 @@ img {
 /* line 93, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.42857;
+  line-height: 1.4;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -468,8 +468,8 @@ img {
 
 /* line 113, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -528,8 +528,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 22px;
+  margin-bottom: 11px;
 }
 /* line 30, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 h1 small,
@@ -548,8 +548,8 @@ h3 .small, .h3 small,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 /* line 41, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 h4 small,
@@ -566,57 +566,57 @@ h6 .small, .h6 small,
 
 /* line 47, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 h1, .h1 {
-  font-size: 36px;
+  font-size: 41px;
 }
 
 /* line 48, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 h2, .h2 {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 /* line 49, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 h3, .h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 /* line 50, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 h4, .h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* line 51, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* line 52, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 h6, .h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* line 58, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 p {
-  margin: 0 0 10px;
+  margin: 0 0 11px;
 }
 
 /* line 62, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 22px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   /* line 62, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
   .lead {
-    font-size: 21px;
+    font-size: 24px;
   }
 }
 
 /* line 78, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 small,
 .small {
-  font-size: 85%;
+  font-size: 87%;
 }
 
 /* line 83, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
@@ -778,8 +778,8 @@ a.bg-danger:hover {
 
 /* line 138, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  margin: 44px 0 22px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -787,7 +787,7 @@ a.bg-danger:hover {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 /* line 153, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 ul ul,
@@ -819,13 +819,13 @@ ol ol {
 /* line 185, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 dl {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 /* line 189, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 dt,
 dd {
-  line-height: 1.42857;
+  line-height: 1.4;
 }
 
 /* line 193, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
@@ -879,9 +879,9 @@ abbr[data-original-title] {
 
 /* line 241, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 11px 22px;
+  margin: 0 0 22px;
+  font-size: 20px;
   border-left: 5px solid #eeeeee;
 }
 /* line 250, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
@@ -896,7 +896,7 @@ blockquote small,
 blockquote .small {
   display: block;
   font-size: 80%;
-  line-height: 1.42857;
+  line-height: 1.4;
   color: #777777;
 }
 /* line 265, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
@@ -936,9 +936,9 @@ blockquote.pull-right .small:after {
 
 /* line 294, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss */
 address {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-style: normal;
-  line-height: 1.42857;
+  line-height: 1.4;
 }
 
 /* line 10, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss */
@@ -2072,8 +2072,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 22px;
+  font-size: 24px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -2133,8 +2133,8 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
-  line-height: 1.42857;
+  font-size: 16px;
+  line-height: 1.4;
   color: #555555;
 }
 
@@ -2142,10 +2142,10 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 36px;
   padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857;
+  font-size: 16px;
+  line-height: 1.4;
   color: #555555;
   background-color: #fff;
   background-image: none;
@@ -2199,15 +2199,15 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  line-height: 34px;
-  line-height: 1.42857 \0;
+  line-height: 36px;
+  line-height: 1.4 \0;
 }
 /* line 186, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 input[type="date"].input-sm,
 input[type="time"].input-sm,
 input[type="datetime-local"].input-sm,
 input[type="month"].input-sm {
-  line-height: 30px;
+  line-height: 33px;
   line-height: 1.5 \0;
 }
 /* line 190, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
@@ -2215,7 +2215,7 @@ input[type="date"].input-lg,
 input[type="time"].input-lg,
 input[type="datetime-local"].input-lg,
 input[type="month"].input-lg {
-  line-height: 46px;
+  line-height: 49px;
   line-height: 1.33 \0;
 }
 
@@ -2224,7 +2224,7 @@ _:-ms-fullscreen, :root input[type="date"],
 _:-ms-fullscreen, :root input[type="time"],
 _:-ms-fullscreen, :root input[type="datetime-local"],
 _:-ms-fullscreen, :root input[type="month"] {
-  line-height: 1.42857;
+  line-height: 1.4;
 }
 /* line 203, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 _:-ms-fullscreen.input-sm, :root input[type="date"].input-sm,
@@ -2257,7 +2257,7 @@ _:-ms-fullscreen.input-lg, :root input[type="month"].input-lg {
 /* line 233, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 .radio label,
 .checkbox label {
-  min-height: 20px;
+  min-height: 22px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -2334,17 +2334,17 @@ input[type="checkbox"] {
 
 /* line 71, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .input-sm, .form-group-sm .form-control {
-  height: 30px;
+  height: 33px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
 /* line 79, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_forms.scss */
 select.input-sm, .form-group-sm .form-control {
-  height: 30px;
-  line-height: 30px;
+  height: 33px;
+  line-height: 33px;
 }
 
 /* line 84, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -2355,17 +2355,17 @@ select[multiple].input-sm, .form-group-sm .form-control {
 
 /* line 71, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .input-lg, .form-group-lg .form-control {
-  height: 46px;
+  height: 49px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33;
   border-radius: 6px;
 }
 
 /* line 79, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_forms.scss */
 select.input-lg, .form-group-lg .form-control {
-  height: 46px;
-  line-height: 46px;
+  height: 49px;
+  line-height: 49px;
 }
 
 /* line 84, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -2380,7 +2380,7 @@ select[multiple].input-lg, .form-group-lg .form-control {
 }
 /* line 342, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback .form-control {
-  padding-right: 42.5px;
+  padding-right: 45px;
 }
 
 /* line 347, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
@@ -2390,25 +2390,25 @@ select[multiple].input-lg, .form-group-lg .form-control {
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   text-align: center;
   pointer-events: none;
 }
 
 /* line 359, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 .input-lg + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
+  width: 49px;
+  height: 49px;
+  line-height: 49px;
 }
 
 /* line 364, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 .input-sm + .form-control-feedback {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
 }
 
 /* line 8, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -2509,7 +2509,7 @@ select[multiple].input-lg, .form-group-lg .form-control {
 
 /* line 384, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback label ~ .form-control-feedback {
-  top: 25px;
+  top: 27px;
 }
 /* line 387, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback label.sr-only ~ .form-control-feedback {
@@ -2598,7 +2598,7 @@ select[multiple].input-lg, .form-group-lg .form-control {
 /* line 515, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 27px;
+  min-height: 29px;
 }
 /* line 521, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .form-group {
@@ -2652,8 +2652,8 @@ select[multiple].input-lg, .form-group-lg .form-control {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857;
+  font-size: 16px;
+  line-height: 1.4;
   border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2881,7 +2881,7 @@ select[multiple].input-lg, .form-group-lg .form-control {
 /* line 127, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-lg {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33;
   border-radius: 6px;
 }
@@ -2889,7 +2889,7 @@ select[multiple].input-lg, .form-group-lg .form-control {
 /* line 131, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -2897,7 +2897,7 @@ select[multiple].input-lg, .form-group-lg .form-control {
 /* line 135, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -3016,7 +3016,7 @@ tbody.collapse.in {
 /* line 59, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 10px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -3037,7 +3037,7 @@ tbody.collapse.in {
 /* line 84, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 1.42857;
+  line-height: 1.4;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
@@ -3167,7 +3167,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   border: 1px solid transparent;
 }
 /* line 14, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -3326,9 +3326,9 @@ tbody.collapse.in {
 /* line 164, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  padding: 14px 15px;
+  font-size: 20px;
+  line-height: 22px;
   height: 50px;
 }
 /* line 171, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
@@ -3383,13 +3383,13 @@ tbody.collapse.in {
 
 /* line 233, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 7px -15px;
 }
 /* line 236, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 22px;
 }
 @media (max-width: 767px) {
   /* line 244, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
@@ -3409,7 +3409,7 @@ tbody.collapse.in {
   }
   /* line 256, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 20px;
+    line-height: 22px;
   }
   /* line 258, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -3428,8 +3428,8 @@ tbody.collapse.in {
   }
   /* line 273, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
@@ -3442,8 +3442,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 @media (min-width: 768px) {
   /* line 423, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss */
@@ -3545,13 +3545,13 @@ tbody.collapse.in {
 
 /* line 342, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 /* line 345, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-sm {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 8.5px;
+  margin-bottom: 8.5px;
 }
 /* line 348, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-xs {
@@ -3561,8 +3561,8 @@ tbody.collapse.in {
 
 /* line 358, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-text {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 @media (min-width: 768px) {
   /* line 358, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
@@ -3803,7 +3803,7 @@ tbody.collapse.in {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 20px 0;
+  margin: 22px 0;
   border-radius: 4px;
 }
 /* line 10, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_pagination.scss */
@@ -3816,7 +3816,7 @@ tbody.collapse.in {
   position: relative;
   float: left;
   padding: 6px 12px;
-  line-height: 1.42857;
+  line-height: 1.4;
   text-decoration: none;
   color: #428bca;
   background-color: #fff;
@@ -3872,7 +3872,7 @@ tbody.collapse.in {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
 }
 /* line 11, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_pagination.scss */
 .pagination-lg > li:first-child > a,
@@ -3891,7 +3891,7 @@ tbody.collapse.in {
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 /* line 11, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_pagination.scss */
 .pagination-sm > li:first-child > a,
@@ -3909,7 +3909,7 @@ tbody.collapse.in {
 /* line 6, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_pager.scss */
 .pager {
   padding-left: 0;
-  margin: 20px 0;
+  margin: 22px 0;
   list-style: none;
   text-align: center;
 }
@@ -4317,9 +4317,7 @@ tbody.collapse.in {
   border-left: 0;
 }
 
-@media (min-width: 1200px) {
-  /* line 13, ../scss/main.scss */
-  .container {
-    width: 750px;
-  }
+/* line 13, ../scss/main.scss */
+main .post {
+  overflow: hidden;
 }
