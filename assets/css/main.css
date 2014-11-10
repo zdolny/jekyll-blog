@@ -367,14 +367,14 @@ th {
     border: 1px solid #ddd !important;
   }
 }
-/* line 11, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 11, ../scss/_scaffolding.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 14, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 14, ../scss/_scaffolding.scss */
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -382,22 +382,20 @@ th {
   box-sizing: border-box;
 }
 
-/* line 22, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 22, ../scss/_scaffolding.scss */
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 27, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 27, ../scss/_scaffolding.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
   color: #333333;
   background-color: #fff;
 }
 
-/* line 36, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 36, ../scss/_scaffolding.scss */
 input,
 button,
 select,
@@ -407,46 +405,46 @@ textarea {
   line-height: inherit;
 }
 
-/* line 48, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 48, ../scss/_scaffolding.scss */
 a {
   color: #428bca;
   text-decoration: none;
 }
-/* line 52, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 52, ../scss/_scaffolding.scss */
 a:hover, a:focus {
   color: #2a6496;
   text-decoration: underline;
 }
-/* line 58, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 58, ../scss/_scaffolding.scss */
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-/* line 69, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 69, ../scss/_scaffolding.scss */
 figure {
   margin: 0;
 }
 
-/* line 76, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 76, ../scss/_scaffolding.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 81, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 81, ../scss/_scaffolding.scss */
 .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 86, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 86, ../scss/_scaffolding.scss */
 .img-rounded {
   border-radius: 6px;
 }
 
-/* line 93, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 93, ../scss/_scaffolding.scss */
 .img-thumbnail {
   padding: 4px;
   line-height: 1.4;
@@ -461,12 +459,12 @@ img {
   height: auto;
 }
 
-/* line 106, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 106, ../scss/_scaffolding.scss */
 .img-circle {
   border-radius: 50%;
 }
 
-/* line 113, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 113, ../scss/_scaffolding.scss */
 hr {
   margin-top: 22px;
   margin-bottom: 22px;
@@ -474,7 +472,7 @@ hr {
   border-top: 1px solid #eeeeee;
 }
 
-/* line 125, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 125, ../scss/_scaffolding.scss */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -486,7 +484,7 @@ hr {
   border: 0;
 }
 
-/* line 141, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
+/* line 141, ../scss/_scaffolding.scss */
 .sr-only-focusable:active, .sr-only-focusable:focus {
   position: static;
   width: auto;
@@ -4326,4 +4324,16 @@ body {
 /* line 16, ../scss/main.scss */
 main .post {
   overflow: hidden;
+}
+
+/* line 106, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 26, ../scss/main.scss */
+body h1 {
+  font-size: 3em;
+  line-height: 1.5em;
 }

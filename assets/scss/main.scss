@@ -3,7 +3,7 @@
 @import "bootstrap";
 
 body { 
-    padding-top: 60px; /* navbar 50px */ 
+    padding-top: 60px; /* navbar 50px */
 }
 
 .navbar {
@@ -15,4 +15,14 @@ body {
 
 main .post {
     overflow: hidden;
+}
+
+// Compass Vertical Rhythm
+$base-font-size: 16px;
+$base-line-height: 24px;
+@include establish-baseline;
+
+
+body h1 {
+    @include adjust-font-size-to(48px);
 }
