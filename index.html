@@ -10,13 +10,13 @@ sitemap:
 
         {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
 
-        <div class="post">
+        <article class="post">
             <h1 class="post-title">
                 <a href="{{ site.baseurl }}{{ post.url }}">
                     {{ post.title }}
                 </a>
             </h1>
-            <p class="post-date">
+            <time pubdate datetime="{{ post.date }}" class="post-date">
                 {% assign m = post.date | date: "%-m" %}
                 {{ post.date | date: "%-d" }}
                 {% case m %}
@@ -34,9 +34,9 @@ sitemap:
                     {% when '12' %}Gru
                 {% endcase %}
                 {{ post.date | date: "%Y" }}
-            </p>
+            </time>
 
-            <p>kategoria: {{ post.category }}</p>
+            <span>kategoria: {{ post.category }}</span>
 
             <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
 
@@ -53,7 +53,7 @@ sitemap:
             {% endif %}
 
             <p class="post-excerpt">{{ post.excerpt | strip_html }} [&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">Czytaj dalej</a>&nbsp;]</p>
-        </div>
+        </article>
     {% endfor %}
 </div>
 
