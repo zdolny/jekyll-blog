@@ -4337,3 +4337,23 @@ body h1 {
   font-size: 3em;
   line-height: 1.5em;
 }
+
+/* line 30, ../scss/main.scss */
+.highlight {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  border-color: gainsboro;
+}
+/* line 38, ../scss/main.scss */
+.highlight pre {
+  margin: 0;
+}
+/* line 41, ../scss/main.scss */
+.highlight blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}

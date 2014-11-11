@@ -36,7 +36,7 @@ sitemap:
                 {{ post.date | date: "%Y" }}
             </time>
 
-            <span>kategoria: {{ post.category }}</span>
+            {% if post.category %}<span>kategoria: {{ post.category }}</span>{% endif %}
 
             <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
 
