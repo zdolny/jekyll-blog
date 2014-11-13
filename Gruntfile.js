@@ -45,13 +45,23 @@ module.exports = function(grunt) {
                 }
             }
         },
+        concat: {
+            options: {
+                separator: ';',
+            },
+            dist: {
+                src: [
+                    'bower_components/jquery/dist/jquery.js', 
+                    'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+                    'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js'
+                ],
+                dest: 'assets/js/dev/global.js'
+            },
+        },
         uglify: {
-            my_target: {
+            dist: {
                 files: {
-                    'assets/js/main.min.js': [
-                        'bower_components/jquery/dist/jquery.js', 
-                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
-                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js']
+                    'assets/js/main.min.js': ['assets/js/dev/global.js', 'assets/js/dev/main.js']
                 }
             }
         },
@@ -80,6 +90,13 @@ module.exports = function(grunt) {
             css: {
                 files: ['assets/scss/*.scss'],
                 tasks: ['compass:dev', 'shell:jekyllBuild'],
+                options: {
+                    spawn: false
+                }
+            },
+            js: {
+                files: ['assets/js/dev/main.js'],
+                tasks: ['concat:dist', 'uglify:dist', 'shell:jekyllBuild'],
                 options: {
                     spawn: false
                 }
