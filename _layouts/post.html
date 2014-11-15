@@ -6,6 +6,7 @@ layout: default
 
 <div class="post">
     <h1 class="post-title">{{ page.title }}</h1>
+    <span class="icon-calendar"></span>
     <span class="post-date">
         {% assign m = page.date | date: "%-m" %}
         {{ page.date | date: "%-d" }}
@@ -26,11 +27,11 @@ layout: default
         {{ page.date | date: "%Y" }}
     </span>
 
-    {% if page.category %}<span>kategoria: {{ page.category }}</span>{% endif %}
+    {% if page.category %}<span class="icon-tag"></span><span>{{ page.category }}</span>{% endif %}
 
-    <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">komentarze</a>
+    <span class="icon-comment-empty"></span><a href="{{ site.baseurl }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">komentarze</a>
 
-    {% if readtime <= '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
+    <span class="icon-clock"></span>{% if readtime <= '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
     
     {% if page.img %}
         <div class="post-img" style="background-img: url(/assets/img/post-img/{{ page.img }});">
