@@ -16,6 +16,7 @@ sitemap:
                     {{ post.title }}
                 </a>
             </h1>
+            <span class="icon-calendar"></span>
             <time pubdate datetime="{{ post.date }}" class="post-date">
                 {% assign m = post.date | date: "%-m" %}
                 {{ post.date | date: "%-d" }}
@@ -36,11 +37,11 @@ sitemap:
                 {{ post.date | date: "%Y" }}
             </time>
 
-            {% if post.category %}<span>kategoria: {{ post.category }}</span>{% endif %}
+            {% if post.category %}<span class="icon-tag"></span><span>{{ post.category }}</span>{% endif %}
 
-            <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
+            <span class="icon-comment-empty"></span><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
 
-            {% if readtime <= '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
+            <span class="icon-clock"></span>{% if readtime <= '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
 
             {% if post.img %}
                 <a href="{{ post.url }}" class="post-img" style="background-img: url(/assets/img/post-img/{{ post.img }});">

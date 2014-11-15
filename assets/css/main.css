@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /* line 9, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -4937,13 +4938,98 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     display: none !important;
   }
 }
-/* line 5, ../scss/main.scss */
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/icons.eot?97685008");
+  src: url("../fonts/icons.eot?97685008#iefix") format("embedded-opentype"), url("../fonts/icons.woff?97685008") format("woff"), url("../fonts/icons.ttf?97685008") format("truetype"), url("../fonts/icons.svg?97685008#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?97685008#fontello') format('svg');
+  }
+}
+*/
+/* line 22, ../scss/_fonts.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 53, ../scss/_fonts.scss */
+.icon-tag:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 54, ../scss/_fonts.scss */
+.icon-comment-empty:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 55, ../scss/_fonts.scss */
+.icon-rss:before {
+  content: '\e802';
+}
+
+/* '' */
+/* line 56, ../scss/_fonts.scss */
+.icon-rss-squared:before {
+  content: '\e803';
+}
+
+/* '' */
+/* line 57, ../scss/_fonts.scss */
+.icon-calendar:before {
+  content: '\e804';
+}
+
+/* '' */
+/* line 58, ../scss/_fonts.scss */
+.icon-calendar-empty:before {
+  content: '\e805';
+}
+
+/* '' */
+/* line 59, ../scss/_fonts.scss */
+.icon-clock:before {
+  content: '\e806';
+}
+
+/* '' */
+/* line 6, ../scss/main.scss */
 body {
   padding-top: 60px;
   /* navbar 50px */
 }
 
-/* line 9, ../scss/main.scss */
+/* line 10, ../scss/main.scss */
 .navbar {
   border-radius: 0;
   border-top: 0;
@@ -4951,7 +5037,7 @@ body {
   border-left: 0;
 }
 
-/* line 16, ../scss/main.scss */
+/* line 17, ../scss/main.scss */
 main .post {
   overflow: hidden;
 }
@@ -4962,13 +5048,13 @@ html {
   line-height: 1.5em;
 }
 
-/* line 26, ../scss/main.scss */
+/* line 27, ../scss/main.scss */
 body h1 {
   font-size: 3em;
   line-height: 1.5em;
 }
 
-/* line 30, ../scss/main.scss */
+/* line 31, ../scss/main.scss */
 .highlight {
   min-height: 20px;
   padding: 19px;
@@ -4978,11 +5064,11 @@ body h1 {
   border-radius: 4px;
   border-color: gainsboro;
 }
-/* line 38, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 .highlight pre {
   margin: 0;
 }
-/* line 41, ../scss/main.scss */
+/* line 42, ../scss/main.scss */
 .highlight blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
