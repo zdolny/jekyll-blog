@@ -59,19 +59,19 @@ sitemap:
 </div>
 
 
-<div class="pagination">
-    {% if paginator.next_page %}
-        <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Starsze</a>
+<ul class="pagination">
+{% if paginator.next_page %}
+    <li><a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Starsze</a></li>
+{% else %}
+    <li class="disabled"><a href="#"><span class="pagination-item older">Starsze</span></a></li>
+{% endif %}
+{% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+        <li><a class="pagination-item newer" href="{{ site.baseurl }}/">Nowsze</a></li>
     {% else %}
-        <span class="pagination-item older">Starsze</span>
+        <li><a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Nowsze</a></li>
     {% endif %}
-    {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-            <a class="pagination-item newer" href="{{ site.baseurl }}/">Nowsze</a>
-        {% else %}
-            <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Nowsze</a>
-        {% endif %}
-    {% else %}
-        <span class="pagination-item newer">Nowsze</span>
-    {% endif %}
-</div>
+{% else %}
+    <li class="disabled"><a href="#"><span class="pagination-item newer">Nowsze</span></a></li>
+{% endif %}
+</ul>
