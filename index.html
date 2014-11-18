@@ -58,20 +58,19 @@ sitemap:
     {% endfor %}
 </div>
 
-
-<ul class="pagination">
+<ul class="pagination col-xs-12">
 {% if paginator.next_page %}
-    <li><a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Starsze</a></li>
+    <li><a class="pagination-item older col-xs-6 text-center" href="{{ site.baseurl }}/page{{paginator.next_page}}">Starsze</a></li>
 {% else %}
-    <li class="disabled"><a href="#"><span class="pagination-item older">Starsze</span></a></li>
+    <li><a href="#"><span class="pagination-item older col-xs-6 text-center">Starsze</span></a></li>
 {% endif %}
 {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-        <li><a class="pagination-item newer" href="{{ site.baseurl }}/">Nowsze</a></li>
+        <li><a class="pagination-item newer col-xs-6 text-center" href="{{ site.baseurl }}/">Nowsze</a></li>
     {% else %}
-        <li><a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Nowsze</a></li>
+        <li><a class="pagination-item newer col-xs-6 text-center" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Nowsze</a></li>
     {% endif %}
 {% else %}
-    <li class="disabled"><a href="#"><span class="pagination-item newer">Nowsze</span></a></li>
+    <li class="disabled"><a href="#" class="col-xs-6 text-center"><span class="pagination-item newer">Nowsze</span></a></li>
 {% endif %}
 </ul>

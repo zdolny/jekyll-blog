@@ -5073,3 +5073,9 @@ body h1 {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
+
+/* line 48, ../scss/main.scss */
+.pagination {
+  float: none;
+  padding-right: 0;
+}
