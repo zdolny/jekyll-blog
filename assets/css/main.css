@@ -959,19 +959,19 @@ address {
 @media (min-width: 768px) {
   /* line 10, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 750px;
+    width: 830px;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 750px;
+    width: 830px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 750px;
+    width: 830px;
   }
 }
 
@@ -3958,6 +3958,52 @@ tbody.collapse.in {
   color: #777777;
   background-color: #fff;
   cursor: not-allowed;
+}
+
+/* line 7, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_badges.scss */
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px;
+}
+/* line 22, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_badges.scss */
+.badge:empty {
+  display: none;
+}
+/* line 27, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_badges.scss */
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+/* line 31, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_badges.scss */
+.btn-xs .badge {
+  top: 0;
+  padding: 1px 5px;
+}
+/* line 39, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_badges.scss */
+a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+  color: #428bca;
+  background-color: #fff;
+}
+/* line 44, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_badges.scss */
+.nav-pills > li > a > .badge {
+  margin-left: 3px;
+}
+
+/* line 51, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_badges.scss */
+a.badge:hover, a.badge:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* line 10, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_list-group.scss */
