@@ -52,17 +52,18 @@ layout: default
 </div>
 
 <div class="neighboring-posts">
+    <ul class="list-unstyled row">
     {% if page.previous %}
-        <small>
-            <a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.summary }}">&larr; {{ page.previous.title }}</a>
-        </small>
+        <li>
+            <a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.summary }}" class="col-xs-6">&larr; {{ page.previous.title }}</a>
+        </li>
     {% endif %}
-
     {% if page.next %}
-        <small>
-            <a href="{{ site.baseurl }}{{ page.next.url }}" {% if page.next.summary %}title="{{ page.next.summary }}"{% endif %}>{{ page.next.title }} &rarr;</a>
-        </small>
+        <li>
+            <a href="{{ site.baseurl }}{{ page.next.url }}" {% if page.next.summary %}title="{{ page.next.summary }}"{% endif %} class="col-xs-6 text-right">{{ page.next.title }} &rarr;</a>
+        </li>
     {% endif %}
+    </ul>
 </div>
 
 {% comment %}
