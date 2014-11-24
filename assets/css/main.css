@@ -5098,9 +5098,17 @@ html {
 body h1 {
   font-size: 3em;
   line-height: 1.5em;
+  margin: 0;
 }
 
 /* line 30, ../scss/main.scss */
+.post-meta {
+  font-size: 1em;
+  line-height: 2em;
+  margin: 0;
+}
+
+/* line 36, ../scss/main.scss */
 .highlight {
   min-height: 20px;
   padding: 19px;
@@ -5110,22 +5118,22 @@ body h1 {
   border-radius: 4px;
   border-color: gainsboro;
 }
-/* line 38, ../scss/main.scss */
+/* line 44, ../scss/main.scss */
 .highlight pre {
   margin: 0;
 }
-/* line 41, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 .highlight blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
 
-/* line 47, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 .twitter-share-button {
   vertical-align: bottom;
 }
 
-/* line 51, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 .pagination {
   float: none;
   padding-right: 0;
