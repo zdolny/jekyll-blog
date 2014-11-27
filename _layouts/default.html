@@ -38,40 +38,10 @@
     </nav>
 
     <div class="container content">
-        <div class="row">
-        
-        <main class="col-sm-9">
-            {{ content }}
-        </main>
-
-        <aside class="col-sm-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title">Kategorie</h2>
-                </div>
-
-                    {% comment %}
-                    {% for tag in site.categories %}
-                        {{ tag[0] }} ({{ tag | last | size }})
-                    {% endfor %}
-                    {% endcomment %}
-
-                <ul class="list-group tag-box inline">
-                    {% assign tags_list = site.categories %}  
-                        {% if tags_list.first[0] == null %}
-                            {% for tag in tags_list %} 
-                                <li class="list-group-item"><a href="{{ site.baseurl }}/categories/#{{ tag }}">{{ tag | capitalize }} <span>({{ site.tags[tag].size }})</span></a></li>
-                            {% endfor %}
-                        {% else %}
-                            {% for tag in tags_list %} 
-                                <li class="list-group-item"><a href="{{ site.baseurl }}/categories/#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>({{ tag[1].size }})</span></a></li>
-                            {% endfor %}
-                        {% endif %}
-                    {% assign tags_list = nil %}
-                </ul>
-            </div>
-        </aside>
-
+        <div class="row">    
+            <main class="col-sm-12">
+                {{ content }}
+            </main>
         </div>
 
         <div class="footer">
