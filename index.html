@@ -37,12 +37,12 @@ sitemap:
                     {% endcase %}
                     {{ post.date | date: "%Y" }}
                 </time>
-
-                {% if post.category %}<span class="icon-tag"></span><span>{{ post.category }}</span>{% endif %}
-
-                <span class="icon-comment-empty"></span><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a>
-
-                <span class="icon-clock"></span>{% if readtime <= '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania
+                &nbsp;/&nbsp;
+                <div class="post-meta-in">{% if post.category %}<span class="icon-tag"></span><span>{{ post.category }}</span>{% endif %}</div>
+                &nbsp;/&nbsp;
+                <div class="post-meta-in"><span class="icon-comment-empty"></span><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">komentarze</a></div>
+                &nbsp;/&nbsp;
+                <div class="post-meta-in"><span class="icon-clock"></span>{% if readtime <= '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. czytania</div>
             </div>
 
             {% if post.img %}

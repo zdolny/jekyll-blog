@@ -27,10 +27,14 @@ body h1 {
     @include adjust-font-size-to(48px);
     margin: 0;
 }
+
 .post-meta {
     font-size: 1em;
     line-height: 2em;
     margin: 0;
+}
+.post-meta-in {
+    display: inline-block;
 }
 
 .highlight {
