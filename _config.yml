@@ -1,20 +1,20 @@
-url: 'http://blog.michaldolny.com'
+url: "https://zdolny.github.io"
 author:
-  name: 'Michał Dolny'
+  name: "Michał Dolny"
 
-baseurl: ''
-markdown: 'kramdown'
+baseurl: "/blog"
+markdown: "kramdown"
 highlighter: pygments
 permalink: /:year/:month/:title/
 paginate_path: /page:num/
-excerpt_separator: '<!-- more -->'
+excerpt_separator: "<!-- more -->"
 
 # Setup
-title: 'zdolny blog'
+title: "zdolny blog"
 tagline: tagline
 paginate: 2
 
-include: ['_pages']
+include: ["_pages"]
 relative_permalinks: false
 
 safe: true
